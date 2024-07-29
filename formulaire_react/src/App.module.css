@@ -1,0 +1,18 @@
+/* Style pour le H1 */
+.background {
+    background-image: url('./Capture.PNG');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.heading {
+  font-family: 'Dancing Script', cursive;  /* Utilisation de la police Dancing Script */
+  font-size: 32px;  /* Taille de la police */
+  color: #854628;  /* Couleur du texte */
+  text-align: center;  /* Centre le texte */
+}
+

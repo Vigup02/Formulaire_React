@@ -1,0 +1,99 @@
+/* Style pour le formulaire */
+.formContainer {
+  text-align: center;
+  width: 25%;  /* Largeur maximale du formulaire */
+  margin: auto;  /* Centre le formulaire */
+  padding: 20px;  /* Espacement intérieur */
+}
+
+/* Conteneur pour les groupes de champs de saisie */
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+/* Style pour les inputs */
+.inputField {
+  width: 90%;  /* Prend toute la largeur disponible */
+  padding: 6px;  /* Espacement intérieur */
+  margin: 16px 0px;  /* Espacement vertical */
+  border: 2px solid #854628;  /* Contour de l'input */
+  background-color: #F2E0CF;  /* Couleur de fond de l'input */
+  border-radius: 4px;  /* Coins arrondis */
+  font-family: 'Lato', sans-serif;  /* Police Lato */
+  color: #854628;  /* Couleur du texte */
+  font-size: 16px;  /* Taille de la police */
+}
+
+/* Style pour le placeholder */
+.inputField::placeholder {
+  font-family: 'Lato', sans-serif;  /* Police Lato */
+  font-size: 16px;  /* Taille de la police */
+  color: #B48954;  /* Couleur du placeholder */
+}
+
+/* Style pour le texte lorsque l'utilisateur tape */
+.inputField:focus {
+  font-family: 'Lato', sans-serif;  /* Police Lato */
+  font-size: 16px;  /* Taille de la police */
+  font-weight: bold;  /* Texte en gras */
+  border: 2px solid #B48954;  /* Contour de l'input */
+  color: #854628;  /* Couleur du texte */
+}
+
+/* Style pour les messages d'erreur */
+.errorMessage {
+  position: absolute;  /* Positionnement absolu par rapport au conteneur parent */
+  bottom: -10px;  /* Positionner le message d'erreur en bas */
+  left: 0px;
+  font-family: 'Lato', sans-serif;  /* Police Lato */
+  font-size: 12px;  /* Taille de la police */
+  color: #e30c0c;  /* Couleur du texte */
+  margin: 0;  /* Retirer les marges */
+  padding: 4px 0;  /* Espacement autour du texte */
+  height: 20px;  /* Hauteur fixe pour réserver de l'espace */
+}
+
+/* Style pour le bouton */
+.submitButton {
+  padding: 10px 20px;  /* Espacement intérieur autour du texte */
+  margin: 20px 0;  /* Espacement vertical */
+  background-color: #854628;  /* Couleur de fond du bouton */
+  color: #ffffff;  /* Couleur du texte */
+  font-family: 'Lato', sans-serif;  /* Police Lato */
+  font-size: 16px;  /* Taille de la police */
+  font-weight: normal;  /* Poids de la police normal */
+  border: 2px solid #854628;  /* Contour du bouton */
+  border-radius: 4px;  /* Coins arrondis */
+  text-align: center;  /* Centre le texte */
+  cursor: pointer;  /* Affiche un curseur de pointeur lors du survol */
+  transition: all 0.3s ease;  /* Transition fluide pour les changements d'état */
+  width: auto;  /* La largeur s'adapte au contenu */
+}
+
+/* Style pour le bouton au survol */
+.submitButton:hover {
+  background-color: #ffffff;  /* Couleur de fond du bouton au survol */
+  color: #854628;  /* Couleur du texte au survol */
+  font-weight: bold;  /* Texte en gras au survol */
+  border: 2px solid #854628;  /* Contour du bouton au survol */
+}
+
+/* Styles pour la fenêtre de confirmation */
+.confirmationMessage{
+  width: 50%;
+  position : absolute;
+  top: 50%;
+  left : 25%;
+  text-align: center;
+  background-color: #0fc138; /* Fond de la fenêtre de confirmation */
+  color: #d4edda; /* Couleur du texte */
+  border: 1px solid #c3e6cb; /* Bordure de la fenêtre */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
